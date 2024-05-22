@@ -8,7 +8,9 @@
 
 \f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
 \outl0\strokewidth0 \strokec2 RewriteEngine on\
-RewriteCond %\{REQUEST_FILENAME\} !-d\
-RewriteCond %\{REQUEST_FILENAME\}\\.html -f\
-RewriteRule ^(.*)$ $1.html [NC,L]}
 DirectoryIndex index.html
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ $1.html [L]
