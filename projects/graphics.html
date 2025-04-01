@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphics - elizabethtrykin.com</title>
+  <link rel="stylesheet" href="../main.min.css">
+  <style>
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px 0;
+    }
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    @media (max-width: 480px) {
+      .image-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div>
+        <strong>Elizabeth Trykin</strong>
+      </div>
+      <ul>
+        <li>
+          <a href="../index.html">about</a>
+        </li>
+        <li>
+          <a href="../writing.html">writing</a>
+        </li>
+        <li>
+          <a href="../projects.html">projects</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Graphics</h1>
+    <div class="image-grid">
+      <img src="../projects/content/america/1.svg" alt="Digital illustration 1">
+      <img src="../projects/content/america/2.svg" alt="Digital illustration 2">
+      <img src="../projects/content/america/3.svg" alt="Digital illustration 3">
+      <img src="../projects/content/america/4.svg" alt="Digital illustration 4">
+      <img src="../projects/content/america/5.svg" alt="Digital illustration 5">
+      <img src="../projects/content/america/6.svg" alt="Digital illustration 6">
+      <img src="../projects/content/america/7.svg" alt="Digital illustration 7">
+      <img src="../projects/content/america/8.svg" alt="Digital illustration 8">
+    </div>
+  </main>
+</body>
+
+</html> 
